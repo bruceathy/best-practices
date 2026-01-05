@@ -7,7 +7,11 @@ function App() {
       <section>
         <h2>Why Work With Us?</h2>
         <Accordion className="accordion">
-          <AccordionItem title="We are the best" className="accordion-item">
+          <AccordionItem
+            id="1"
+            title="We are the best"
+            className="accordion-item"
+          >
             <article>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
@@ -16,7 +20,7 @@ function App() {
               <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </article>
           </AccordionItem>
-          <AccordionItem title="Well duh??" className="accordion-item">
+          <AccordionItem id="2" title="Well duh??" className="accordion-item">
             <article>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </article>
