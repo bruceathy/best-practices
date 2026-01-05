@@ -1,3 +1,3 @@
-export default function Accordion({ items }) {
-  return <ul>{items.map()}</ul>;
+export default function Accordion({ children, className }) {
+  return <ul className={className}>{children}</ul>;
 }

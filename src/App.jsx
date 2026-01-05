@@ -1,9 +1,29 @@
+import Accordion from "./components/Accordion/Accordion";
+import AccordionItem from "./components/Accordion/AccordionItem";
+
 function App() {
   return (
-    <>
-      <h1>React Patterns And Practices</h1>
-      <p>release</p>
-    </>
+    <main>
+      <section>
+        <h2>Why Work With Us?</h2>
+        <Accordion className="accordion">
+          <AccordionItem title="We are the best" className="accordion-item">
+            <article>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+                quas quibusdam quia quod, quos quae quidem quia quae quod quas
+              </p>
+              <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+          </AccordionItem>
+          <AccordionItem title="Well duh??" className="accordion-item">
+            <article>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+          </AccordionItem>
+        </Accordion>
+      </section>
+    </main>
   );
 }
 
