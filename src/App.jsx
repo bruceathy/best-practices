@@ -1,5 +1,4 @@
 import Accordion from "./components/Accordion/Accordion";
-import AccordionItem from "./components/Accordion/AccordionItem";
 
 function App() {
   return (
@@ -7,7 +6,7 @@ function App() {
       <section>
         <h2>Why Work With Us?</h2>
         <Accordion className="accordion">
-          <AccordionItem
+          <Accordion.Item
             id="1"
             title="We are the best"
             className="accordion-item"
@@ -19,12 +18,12 @@ function App() {
               </p>
               <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </article>
-          </AccordionItem>
-          <AccordionItem id="2" title="Well duh??" className="accordion-item">
+          </Accordion.Item>
+          <Accordion.Item id="2" title="Well duh??" className="accordion-item">
             <article>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </article>
-          </AccordionItem>
+          </Accordion.Item>
         </Accordion>
       </section>
     </main>
