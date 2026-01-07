@@ -6,7 +6,6 @@ export default function AccordionItem({ id, title, children, className }) {
 
   return (
     <li className={className}>
-      <h3 onClick={() => toggleAccordionItem(id)}>{title}</h3>
       <div
         className={
           isOpen ? "accordion-item-content open" : "accordion-item-content"
