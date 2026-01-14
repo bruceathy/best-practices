@@ -5,9 +5,7 @@ export default function AccordionContent({ id, children, className }) {
   const isOpen = openItemId === id;
   return (
     <div
-      className={
-        isOpen ? `${className ?? ""} open` : `${className ?? ""} close`
-      }
+      className={isOpen ? `${className ?? ""} ope` : `${className ?? ""} close`}
     >
       {children}
     </div>
