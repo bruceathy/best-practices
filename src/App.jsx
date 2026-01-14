@@ -6,14 +6,11 @@ function App() {
       <section>
         <h2>Why Work With Us?</h2>
         <Accordion className="accordion">
-          <Accordion.Item className="accordion-item">
-            <Accordion.Title id="experience" className="accordion-item-title">
+          <Accordion.Item id="experience" className="accordion-item">
+            <Accordion.Title className="accordion-item-title">
               We are the best
             </Accordion.Title>
-            <Accordion.Content
-              id="experience"
-              className="accordion-item-content"
-            >
+            <Accordion.Content className="accordion-item-content">
               <article>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
@@ -24,14 +21,11 @@ function App() {
             </Accordion.Content>
           </Accordion.Item>
 
-          <Accordion.Item className="accordion-item">
-            <Accordion.Title id="local-guide" className="accordion-item-title">
+          <Accordion.Item id="local-guide" className="accordion-item">
+            <Accordion.Title className="accordion-item-title">
               We are
             </Accordion.Title>
-            <Accordion.Content
-              id="local-guide"
-              className="accordion-item-content"
-            >
+            <Accordion.Content className="accordion-item-content">
               <article>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </article>
