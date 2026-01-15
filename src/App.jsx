@@ -1,4 +1,5 @@
 import Accordion from "./components/Accordion/Accordion";
+import SearchList from "./components/SearchList/SearchList";
 
 function App() {
   return (
@@ -32,6 +33,9 @@ function App() {
             </Accordion.Content>
           </Accordion.Item>
         </Accordion>
+      </section>
+      <section>
+        <SearchList items={["Item 1", "Item 2", "Item 3"]} />
       </section>
     </main>
   );
