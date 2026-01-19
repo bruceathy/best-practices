@@ -1,10 +1,10 @@
 import { useState } from "react";
 
-export default function SearchList({ items }) {
+export default function SearchList({ items, children }) {
   const [searchTerm, setSearchTerm] = useState("");
 
   const filteredItems = items.filter((item) =>
-    JSON.stringify(item).toLowerCase().includes(searchTerm.toLowerCase())
+    JSON.stringify(item).toLowerCase().includes(searchTerm.toLowerCase()),
   );
 
   function handleSearch(event) {
@@ -16,7 +16,7 @@ export default function SearchList({ items }) {
       <input type="search" placeholder="Search" onChange={handleSearch} />
       <ul>
         {filteredItems.map((item, index) => (
-          <li key={index}>{item.toString()}</li>
+          <li key={index}>{children(item)}</li>
         ))}
       </ul>
     </div>
